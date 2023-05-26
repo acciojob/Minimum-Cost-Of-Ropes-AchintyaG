@@ -1,10 +1,9 @@
 function calculateMinCost(event) {
   //your code here
   event.preventDefault();
-  var input=document.querySelector('input').value;
-	var arr = input.split(',');
+  var inputElement=document.querySelector('input').value;
+	var arr = inputElement.split(',');
   arr.sort(function (a,b) { return a-b});
-}  
 var cost =0;
 while(arr.length>1)
 	{
@@ -15,4 +14,5 @@ while(arr.length>1)
 		arr.shift();
 		arr.sort(function (a,b) { return a-b});
 	}
-document.getElementById("result").textContant = cost;
+document.getElementById("result").textContent = cost;
+}
