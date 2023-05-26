@@ -1,4 +1,4 @@
-function calculateMinCost() {
+function calculateMinCost(event) {
   //your code here
   event.preventDefault();
   var input=document.querySelector('input').value;
@@ -16,4 +16,3 @@ while(arr.length>1)
 		arr.sort(function (a,b) { return a-b});
 	}
 document.getElementById("result").textContant = cost;
-} 
